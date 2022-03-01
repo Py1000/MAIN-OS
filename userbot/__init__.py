@@ -6,17 +6,17 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.uniborgConfig import Config
-from var import Var
+from Config import *
 terminatorVer = "1.0"
 StartTime = time.time()
 
 os.system("pip install --upgrade pip")
-if Var.STRING_SESSION:
-    session_name = str(Var.STRING_SESSION)
-    bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
+if STRING_SESSION:
+    session_name = str(STRING_SESSION)
+    bot = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 else:
     session_name = "startup"
-    bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
+    bot = TelegramClient(session_name, APP_ID, API_HASH)
 
 
 CMD_LIST = {}
