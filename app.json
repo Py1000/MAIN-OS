@@ -57,7 +57,8 @@
       "required": false
     },
     "UPSTREAM_REPO" {
-    "description" : ""
+    "description" : "Don't change",
+    "value" : "https://github.com/TERMINATOR-001/MAIN-OS"
   },
   "addons": [{
     "plan": "heroku-postgresql",
