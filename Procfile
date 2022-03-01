@@ -1,1 +1,1 @@
-worker: terminator001.py
+worker: python3 terminator001.py
